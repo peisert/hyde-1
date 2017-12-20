@@ -48,7 +48,8 @@ body {
 }
 
 html {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Lucida Grande',"Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+  /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
   font-size: 16px;
   line-height: 1.5;
 }
@@ -76,20 +77,25 @@ a:focus {
   text-decoration: underline;
 }
 
+
+
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: .5rem;
-  font-weight: bold;
+<!--  font-weight: bold; -->
+  font-weight: 300;
   line-height: 1.25;
   color: #313131;
   text-rendering: optimizeLegibility;
 }
 h1 {
   font-size: 2rem;
+  font-weight: 400;  
 }
 h2 {
   margin-top: 1rem;
   font-size: 1.5rem;
+  font-weight: 400;
 }
 h3 {
   margin-top: 1.5rem;
@@ -232,7 +238,8 @@ tbody tr:nth-child(odd) th {
  */
 
 .lead {
-  font-size: 1.25rem;
+  font-size: 1.0 rem; 
+/*  font-size: 1.25rem; */
   font-weight: 300;
 }
 
@@ -288,7 +295,7 @@ tbody tr:nth-child(odd) th {
 }
 .masthead-title small {
   font-size: 75%;
-  font-weight: 400;
+<!--  font-weight: 400;-->
   color: #c0c0c0;
   letter-spacing: 0;
 }
@@ -362,7 +369,8 @@ tbody tr:nth-child(odd) th {
   overflow: hidden; /* clearfix */
   margin-left: -1rem;
   margin-right: -1rem;
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-family: 'Lucida Grande',"Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+  /*font-family: "PT Sans", Helvetica, Arial, sans-serif;*
   color: #ccc;
   text-align: center;
 }

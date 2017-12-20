@@ -9,16 +9,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
   {{ if .IsHome }}
-  <title>{{ .Site.Title }}</title>
+  <title>{{ .Site.Title }} &mdash; {{ .Site.Params.Description }}</title>
   {{ else }}
   <title>{{ .Title }} &middot; {{ .Site.Title }}</title>
   {{ end }}
+
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/3.6.9/firebase.js"></script>
+  <script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBKUy5FL5K_xpZnjZCxmyHQ7BCUrbAaYJU",
+    authDomain: "peisert-website.firebaseapp.com",
+    databaseURL: "https://peisert-website.firebaseio.com",
+    storageBucket: "peisert-website.appspot.com",
+    messagingSenderId: "909427891766"
+  };
+  firebase.initializeApp(config);
+  </script>
 
   <!-- CSS -->
   <link rel="stylesheet" href="{{ .Site.BaseURL }}css/poole.css">
   <link rel="stylesheet" href="{{ .Site.BaseURL }}css/syntax.css">
   <link rel="stylesheet" href="{{ .Site.BaseURL }}css/hyde.css">
+<!--  
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700">
+
 
   <!-- Icons -->
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
